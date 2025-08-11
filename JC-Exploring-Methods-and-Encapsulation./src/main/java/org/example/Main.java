@@ -34,39 +34,51 @@ public class Main {
     public static void main(String[] args) {
 
 //        //1. Designing Methods
-//        Car myCar = new Car();
-//        myCar.startEngine();
-//        String status = myCar.drive(60);
-//        System.out.println(status);
-//        myCar.turnOffEngine();
+        System.out.println("Exercise 1");
+        Car myCar = new Car();
+        myCar.startEngine();
+        String status = myCar.drive(60);
+        System.out.println(status);
+        myCar.turnOffEngine();
+        System.out.println();
+        System.out.println();
 
 //        //2. Passing Parameters: Primitives vs. Objects
 //        int originalValue = 50;
 //        System.out.println("Before method call: " + originalValue);
 //        modifyValue(originalValue);
 //        System.out.println("After method call: " + originalValue);
-//        Student alex = new Student("Alex");
-//        System.out.println("Name before change: " + alex.getName());
-//        changeStudentName(alex,"Jordan");
-//        System.out.println("Name after change: " + alex.getName());
+        System.out.println("Exercise 2");
+        Student alex = new Student("Alex");
+        System.out.println("Name before change: " + alex.getName());
+        changeStudentName(alex,"Jordan");
+        System.out.println("Name after change: " + alex.getName());
+        System.out.println();
+        System.out.println();
 
 //        //3. Using Varargs
 //        printMessages("Hello", "World");
 //        printMessages("Testing", "Varargs", "Here");
 //        printMessages();
-//        findLargest(10, 5, 25, 15);
-//        findLargest(-5, -1, -10);
-//        findLargest();
+        System.out.println("Exercise 3");
+        findLargest(10, 5, 25, 15);
+        findLargest(-5, -1, -10);
+        findLargest();
+        System.out.println();
+        System.out.println();
 
 //        //4. Access Specifiers
 //        Account myAccount = new Account();
 //        myAccount.displayAccountDetails();
-//        SmartDoor door = new SmartDoor();
-//        System.out.println("Is the door locked? " + door.isLocked());
-//        door.unlockdoor();
-//        System.out.println("Is the door locked? " + door.isLocked());
-//        door.lockdoor();
-//        System.out.println("Is the door locked? " + door.isLocked());
+        System.out.println("Exercise 4");
+        SmartDoor door = new SmartDoor();
+        System.out.println("Is the door locked? " + door.isLocked());
+        door.unlockdoor();
+        System.out.println("Is the door locked? " + door.isLocked());
+        door.lockdoor();
+        System.out.println("Is the door locked? " + door.isLocked());
+        System.out.println();
+        System.out.println();
 
 //        //5. Static Methods and Variables
 //        System.out.println("App Name: " + Utility.getAppName());
@@ -74,17 +86,23 @@ public class Main {
 //        // The following line would cause a compile-time error
 //        // System.out.println("Instance ID: " + Utility.getInstanceId());
 //
-//        Utility utilInstance = new Utility();
-//        System.out.println("Instance ID: " + utilInstance.getInstanceId());
-//        System.out.println(25.0 + " degrees C is " + Converter.celsiusToFahrenheit(25.0)  + " degrees F.");
+        System.out.println("Exercise 5");
+        Utility utilInstance = new Utility();
+        System.out.println("Instance ID: " + utilInstance.getInstanceId());
+        System.out.println(25.0 + " degrees C is " + Converter.celsiusToFahrenheit(25.0)  + " degrees F.");
+        System.out.println();
+        System.out.println();
 
 //        //6. Method Overloading
 //        Display d = new Display();
 //        d.show(42);
 //        d.show("Hello");
 //        d.show("Goodbye", 3);
-//        System.out.println(25.0 + " degrees C is " + Converter.celsiusToFahrenheit(25.0)  + " degrees F.");
-//        System.out.println(77.0 + " degrees F is " + Converter.fahrenheitToCelsius(77.0)  + " degrees C.");
+        System.out.println("Exercise 6");
+        System.out.println(25.0 + " degrees C is " + Converter.celsiusToFahrenheit(25.0)  + " degrees F.");
+        System.out.println(77.0 + " degrees F is " + Converter.fahrenheitToCelsius(77.0)  + " degrees C.");
+        System.out.println();
+        System.out.println();
 
 //        //7. Constructors and Constructor Overloading
 //        Pizza pizza1 = new Pizza();
@@ -95,14 +113,16 @@ public class Main {
 //
 //        Pizza pizza3 = new Pizza("Mushroom and Onion", 16);
 //        pizza3.display();
+        System.out.println("Exercise 7");
+        Computer comp1 = new Computer("Generic", 8);
+        Computer comp2 = new Computer("Dell", 8);
+        Computer comp3 = new Computer("Apple", 16);
 
-//        Computer comp1 = new Computer("Generic", 8);
-//        Computer comp2 = new Computer("Dell", 8);
-//        Computer comp3 = new Computer("Apple", 16);
-//
-//        System.out.println("Computer 1:" + comp1.getDetails());
-//        System.out.println("Computer 2:" + comp2.getDetails());
-//        System.out.println("Computer 3:" + comp3.getDetails());
+        System.out.println("Computer 1:" + comp1.getDetails());
+        System.out.println("Computer 2:" + comp2.getDetails());
+        System.out.println("Computer 3:" + comp3.getDetails());
+        System.out.println();
+        System.out.println();
 
 //        //8. Encapsulation
 //        Thermostat stat = new Thermostat(22.5);
@@ -113,13 +133,12 @@ public class Main {
 //
 //        stat.setTemperatureCelsius(25.0); // Set a valid temp
 //        System.out.println("Temp after valid change: " + stat.getTemperatureCelsius());
+        System.out.println("Exercise 8");
         User user = new User("12345678");
         System.out.println(user.getPassword());
         user.setPassword("pass");
         System.out.println(user.getPassword());
         user.setPassword("secure_password_123");
-
-
     }
 }
 
